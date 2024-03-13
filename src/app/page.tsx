@@ -1,7 +1,9 @@
+import Container from '@/components/Container';
+import './page.css';
 export default function Home() {
   return (
-    <main>
-      <h1>hello world</h1>
-    </main>
+    <Container>
+      <span>Home</span>
+    </Container>
   );
 }

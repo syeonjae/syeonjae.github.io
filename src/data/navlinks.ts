@@ -8,3 +8,6 @@ const navlinks: { title: string; link: string }[] = [
     title: "Blog",
   },
 ];
+
+
+export default navlinks;
