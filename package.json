@@ -1,0 +1,25 @@
+{
+  "name": "syeonjae.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://syeonjae.github.io/",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "deploy": "next build && fsutil file createnew out/.nojekyll 0 && git add -f out/ && git commit -m 'test' && git subtree push --prefix out origin gh-pages"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.3",
+    "typescript": "^5"
+  }
+}
